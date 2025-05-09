@@ -1,3 +1,11 @@
+////////////////////////////////////////////
+/// Author : Justin Nichols
+/// Date   : 20250608
+/// class  : 10209
+/// email  : jnicho45@students.solano.edu
+/// desc   : Movie database that hopefully works
+/// hc     : I will conduct myself with honor and integrity at all times. I will not lie, cheat, or steal, nor will I accept the actions of those who do. This program is solely my work, or proper attribution has been given to code that I did not write. If I am found to violate this policy, I realize I will receive an F for this course with no exception.
+////////////////////////////////////////////
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -152,7 +160,7 @@ namespace WinFormsMovieDB
                         }
                         dataGridView1.DataSource = filteredMovies;
                         if (filteredMovies.Count == 0)
-                            MessageBox.Show("No movies found for that actor.");
+                            MessageBox.Show("No movies were found for that actor.");
                     }
                     else
                     {
@@ -223,7 +231,7 @@ namespace WinFormsMovieDB
                     }
                     else
                     {
-                        pictureBoxPoster.Image = null; // Just in case there is none, name one movie that lacks posters...
+                        pictureBoxPoster.Image = null; // Just in case there is none, name one movie that lacks poster...
                     }
                 }
             }
